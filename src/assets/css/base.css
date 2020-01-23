@@ -1,0 +1,30 @@
+@import './normalize.css';
+/* :root  表示获取根元素html  下面代码为定义一些常用的样式变量*/
+:root{
+    --color-text:#666;
+    --color-height-text:#ff4777;
+    --color-tint:#ff8198;
+    --color-background:#fff;
+    --font-size:14px;
+    --line-height:1.5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear-fix::afeter{
+    clear:both;
+    content:'';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clear-fix{
+    zoom:1;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
